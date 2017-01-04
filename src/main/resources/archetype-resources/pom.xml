@@ -8,25 +8,25 @@
     <parent>
         <groupId>org.eurekaclinical</groupId>
         <artifactId>eurekaclinical-parent-standard-deps</artifactId>
-        <version>2-SNAPSHOT</version>
+        <version>1</version>
     </parent>
     <url>https://github.com/eurekaclinical/${artifactId}.git</url>
 
     <scm>
-        <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-template.git</connection>
-        <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-service-template.git</developerConnection>
-        <url>https://github.com/eurekaclinical/eurekaclinical-service-template.git</url>
+        <connection>scm:git:https://github.com/eurekaclinical/${artifactId}.git</connection>
+        <developerConnection>scm:git:https://github.com/eurekaclinical/${artifactId}.git</developerConnection>
+        <url>https://github.com/eurekaclinical/${artifactId}.git</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/eurekaclinical/eurekaclinical-service-template/issues</url>
+        <url>https://github.com/eurekaclinical/${artifactId}/issues</url>
     </issueManagement>
 
     <properties>
-        <module-name>eurekaclinical-template</module-name>
-        <eurekaclinical-common-version>1.1-SNAPSHOT</eurekaclinical-common-version>
+        <module-name>eurekaclinical-new-module</module-name>
+        <eurekaclinical-common-version>1.0</eurekaclinical-common-version>
     </properties>
 <build>
     <plugins>
@@ -99,7 +99,7 @@
         <profile>
             <id>tomcat</id>
             <properties>
-                <cas-mock-version>1.1-SNAPSHOT</cas-mock-version>
+                <cas-mock-version>1.0</cas-mock-version>
                 <tomcat.httpsPort>8443</tomcat.httpsPort>
                 <tomcat.port>8080</tomcat.port>
             </properties>
